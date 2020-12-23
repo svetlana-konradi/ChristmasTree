@@ -1,9 +1,152 @@
-.menu {
+@font-face {
+    font-family: Open-Sans;
+    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: Open-Sans;
+    margin: 0;
+    font-size: 10px;
+  }
+  
+  .menu {
     width: 100%;
-    background-color: #2B3B2D;
-    background-position: center center;
+    background-color: #000000;
+    display: flex;
+    padding: 3%;
+  }
+  
+  .logotype {
+    text-transform: uppercase;
+    font-size: 4vw;
+    width: 30%;
+    padding: 2%;
+    color: #ffffff;
+  }
+  
+  .nav {
+    width: 70%;
+    text-transform: uppercase;
+    text-align: right;
+    padding: 5%;
+    display: inline;
+    margin-right: 10%;
+    }
+  
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.75vw;
+  }
+  
+  .nav-list-item:nth-child(n+2) {
+    margin-left: 20%;
+  }
+  
+  .nav-list-link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .container {
+    width: 100vw;
+  }
+
+  .container-image {
+    background-image: url(../img/Christmas_Snow.jpg);
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
+    padding: 15%;
+  }
+
+  .header-title {
+    font-size: 7vw;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+  }
+
+  .products {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding-top: 6%;
+  }
+
+  .product {
+    width: 50vw;
+    height: 70vw;
+  }
+
+  .title {
+    text-transform: uppercase;
+    font-size: 3vw;
+  }
+
+  .product-image {
+    width: 35vw;
+    height: 45vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .prices {
+    display: inline-flex;
+  }
+
+  .product-price {
+    font-size: 3vw;
+    width: 45%;
+    padding-left: 5%;
+  }
+
+  .product-oldprice {
+    font-size: 3vw;
     position: relative;
+    width: 45%;
+    padding-left: 0%;
+
+  }
+
+  .product-oldprice:before {
+	content: "";
+	border-bottom: 3px solid red;
+	position: absolute;
+	width: 30%;
+	height: 50%;
+	transform: rotate(-12deg);
 }
 
+  .product-description {
+    font-size: 2vw;
+  }
+
+  .footer-social {
+      background-color: #000000;
+      width: 100vw;
+  }
+
+  .socials {
+    list-style-type: none;
+    display: inline-flex;
+  }
+
+  .social-item {
+
+  }
+
+  .social-link {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .instagram::after {
+    content: "";
+
+  }
